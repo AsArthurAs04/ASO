@@ -12,8 +12,8 @@ restar(){
 multiplicar(){
  echo $(($1 * $2))
 }
-dividir(){ 
- if [[$2 -eq 0 ]]; then 
+dividir(){  
+ if [[ $2 -eq 0 ]]; then 
      echo "Error:division por cero"
  else 
      echo "scale=2; $1 /$2" |bc
