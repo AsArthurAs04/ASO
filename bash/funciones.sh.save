@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mostrar_uso_disco() {
+ 	 -df -h --outpot = source,pcent \
+	| grep -v "Use%"
+
+}
