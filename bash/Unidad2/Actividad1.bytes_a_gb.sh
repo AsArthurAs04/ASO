@@ -10,10 +10,10 @@
 #!/bin/bash
 
 bytes_a_gb() {
-    local bytes=$1
+    bytes=$1
 
     if [ -z "$bytes" ]; then    
-        echo "Uso: bytes_a_gb <bytes>"
+        echo "NO has pasado parametro"
         return 1
     fi
      echo "scale=2; $bytes / 1073741824" | bc
@@ -22,3 +22,4 @@ bytes_a_gb() {
 bytes_a_gb 5000000000
 bytes_a_gb 1073741824
 
+#bytes_a_gb $1
