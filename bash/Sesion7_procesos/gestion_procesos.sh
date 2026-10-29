@@ -30,12 +30,21 @@ top_cpu(){
 }
 
 cambiar_prioridad(){
-echo "4"
-
+    read -p "Introduce el PiD del proceso:" pid
+    if valida_pid "$pid"; then
+        echo "El proceso existe"
+    else
+        echo "Error el proceso no existe"
+    fi
 }
 
 finalizar_proceso(){
-echo "5"
+read -p "Introcude el PiD del proceso" pid
+    if valida_pid "$pid"; then
+        echo "El proceso existe"
+    else
+        echo "Error el proceso no existe"
+    fi
 
 }
 
